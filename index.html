@@ -210,6 +210,8 @@
         </ul>
       </div>
 
+
+      
     <!-- ================= [화면 9] 학부 (AMS) ================= -->
     <section class="screen top-align" id="sec-bs-ams">
       <p class="eyebrow">SBU Undergraduate · Bachelor of Science</p>
@@ -454,23 +456,6 @@
       </ul>
     </div>
   </div>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const screens = document.querySelectorAll(".screen");
-      screens.forEach((screen, index) => {
-        if (index < screens.length - 1) {
-          const nextScreen = screens[index + 1];
-          const wrapper = document.createElement("div");
-          wrapper.className = "next-page-area";
-          wrapper.innerHTML = `<button type="button" class="next-page-btn">다음 화면으로 ↓</button>`;
-          wrapper.querySelector("button").addEventListener("click", () => {
-            nextScreen.scrollIntoView({ behavior: "smooth" });
-          });
-          screen.appendChild(wrapper);
-        }
-      });
-    });
-  </script>
 </body>
 </body>
 </html>
