@@ -32,7 +32,6 @@ body {
   background-color: var(--bg-ivory);
   overflow-y: scroll;
   scroll-snap-type: y mandatory; /* 세로 방향 강제 스냅 */
-  scroll-behavior: smooth;
   overscroll-behavior-y: contain;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
   position: relative;
@@ -42,7 +41,7 @@ body {
 .screen {
   min-height: 100dvh;
   width: 100%;
-  padding: 48px 28px 64px;
+  padding: 48px 28px 35px;
   scroll-snap-align: start;   /* 화면 시작점에 딱 맞춰 멈춤 */
   scroll-snap-stop: always;   /* 빠르게 굴려도 한 화면씩 건너뛰지 않고 멈춤 */
   display: flex;
